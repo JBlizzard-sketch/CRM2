@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Welcome New Customer",
+    "trigger": "customer_created",
+    "action": "send_welcome_message",
+    "status": "active",
+    "config": {
+      "enabled": true,
+      "delay_minutes": 0,
+      "template_name": "Welcome New Customer",
+      "description": "Automatically send welcome message to new customers"
+    }
+  },
+  {
+    "name": "Order Confirmation",
+    "trigger": "order_created",
+    "action": "send_order_confirmation",
+    "status": "active",
+    "config": {
+      "enabled": true,
+      "delay_minutes": 0,
+      "template_name": "Order Confirmation",
+      "description": "Send confirmation when order is placed"
+    }
+  },
+  {
+    "name": "Shipping Notification",
+    "trigger": "order_shipped",
+    "action": "send_shipping_notification",
+    "status": "active",
+    "config": {
+      "enabled": true,
+      "delay_minutes": 0,
+      "template_name": "Shipping Notification",
+      "description": "Notify customer when order ships"
+    }
+  },
+  {
+    "name": "Delivery Confirmation",
+    "trigger": "order_delivered",
+    "action": "send_delivery_confirmation",
+    "status": "active",
+    "config": {
+      "enabled": true,
+      "delay_minutes": 0,
+      "template_name": "Order Delivered",
+      "description": "Request feedback after delivery"
+    }
+  },
+  {
+    "name": "Abandoned Cart Recovery",
+    "trigger": "cart_abandoned",
+    "action": "send_cart_reminder",
+    "status": "active",
+    "config": {
+      "enabled": true,
+      "delay_minutes": 60,
+      "template_name": "Abandoned Cart Reminder",
+      "description": "Send reminder for abandoned carts after 1 hour"
+    }
+  }
+]

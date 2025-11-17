@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Welcome New Customer",
+    "category": "marketing",
+    "content": "Hi {{name}}! Welcome to {{business_name}}. We're excited to have you! Browse our latest products and enjoy 10% off your first order with code: WELCOME10",
+    "language": "en",
+    "variables": ["name", "business_name"],
+    "status": "approved"
+  },
+  {
+    "name": "Order Confirmation",
+    "category": "utility",
+    "content": "Hi {{name}}, your order #{{order_id}} has been confirmed! Total: KES {{amount}}. Expected delivery: {{delivery_date}}. Thank you!",
+    "language": "en",
+    "variables": ["name", "order_id", "amount", "delivery_date"],
+    "status": "approved"
+  },
+  {
+    "name": "Shipping Notification",
+    "category": "utility",
+    "content": "Good news {{name}}! Your order #{{order_id}} has been shipped. Track it here: {{tracking_link}}",
+    "language": "en",
+    "variables": ["name", "order_id", "tracking_link"],
+    "status": "approved"
+  },
+  {
+    "name": "Flash Sale Alert",
+    "category": "marketing",
+    "content": "FLASH SALE! {{name}}, hurry! {{product_name}} is {{discount}}% OFF for the next {{hours}} hours only!",
+    "language": "en",
+    "variables": ["name", "product_name", "discount", "hours"],
+    "status": "approved"
+  },
+  {
+    "name": "Payment Received",
+    "category": "utility",
+    "content": "Payment confirmed! Hi {{name}}, we've received your payment of KES {{amount}} for order #{{order_id}}.",
+    "language": "en",
+    "variables": ["name", "amount", "order_id"],
+    "status": "approved"
+  },
+  {
+    "name": "Abandoned Cart Reminder",
+    "category": "marketing",
+    "content": "Hi {{name}}! You left items in your cart. Complete your order now and get FREE delivery. Your cart: {{cart_items}}",
+    "language": "en",
+    "variables": ["name", "cart_items"],
+    "status": "approved"
+  },
+  {
+    "name": "Order Delivered",
+    "category": "utility",
+    "content": "Your order #{{order_id}} has been delivered! We hope you love it {{name}}. Rate your experience: {{feedback_link}}",
+    "language": "en",
+    "variables": ["name", "order_id", "feedback_link"],
+    "status": "approved"
+  },
+  {
+    "name": "New Product Launch",
+    "category": "marketing",
+    "content": "{{name}}, exciting news! We just launched {{product_name}}. Be among the first to get it for KES {{price}}. Shop now!",
+    "language": "en",
+    "variables": ["name", "product_name", "price"],
+    "status": "approved"
+  }
+]

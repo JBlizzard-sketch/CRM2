@@ -1,0 +1,106 @@
+You are tasked with building a **multi-channel CRM system** for small businesses. The user already has a Supabase database with an **existing schema** (tables, triggers, relationships, indexes, RLS policies). Your job is to **build the CRM around the existing schema**, without overwriting anything, and create a **ready-to-demo system** that can be shown to potential customers.
+
+---
+
+### Step 1: Ask for Credentials
+Interactively request from the user:
+- SUPABASE_URL
+- SUPABASE_ANON_KEY
+- SUPABASE_SERVICE_ROLE_KEY
+- TWILIO_ACCOUNT_SID (sandbox optional)
+- TWILIO_AUTH_TOKEN
+- TWILIO_PHONE_NUMBER
+- GROQ_API_KEY (optional)
+
+---
+
+### Step 2: Inspect Existing Database
+- Connect to Supabase using the provided credentials.
+- Query and infer all tables, columns, data types, relationships, indexes, triggers, and RLS policies.
+- Map entities for CRM: businesses, customers, conversations, messages, products, orders, order_items, automations, automation_logs, nlp_results, analytics_daily.
+- Infer constraints, unique indexes, and relationships to use best practices in the backend.
+
+---
+
+### Step 3: Backend Setup
+- Build REST/GraphQL endpoints for all core operations based on the **existing schema**.
+- Include **modular adapters** for:
+  - Twilio (WhatsApp/SMS sandbox)
+  - Groq NLP (optional)
+- Ensure all backend respects `business_id` isolation and RLS policies.
+- Ensure **modular design**: missing keys/modules don’t break the system.
+
+---
+
+### Step 4: Frontend CRM (Next.js / React)
+- Build a **dashboard** displaying:
+  - Customers
+  - Conversations with messages (inbound/outbound)
+  - Products
+  - Orders and order_items
+  - Automations and automation logs
+  - Daily analytics
+- Include:
+  - Filterable, searchable, and editable tables
+  - Mark conversations open/closed
+  - Trigger automations manually
+  - Update customers, products, and orders
+- Use **modern UI/UX practices**, fast rendering, responsive design.
+- Populate with rich **demo/test data** (see Step 6).
+
+---
+
+### Step 5: Messaging Integration (Twilio)
+- Receive inbound messages via Twilio sandbox and map them to `messages` table.
+- Display messages in the CRM dashboard.
+- Outbound optional; demo-only.
+
+---
+
+### Step 6: Populate with Extensive Demo Data
+Once keys are received and database is inspected:
+- Generate **multiple demo businesses** (5–10) with realistic names and slugs.
+- For each business:
+  - 50–100 customers with diverse metadata
+  - 200+ conversations across channels (WhatsApp, SMS, optional Instagram/TikTok placeholders)
+  - Messages per conversation (10–20 each), inbound and outbound
+  - 20–50 products with varying attributes, prices, stock
+  - 50–100 orders per business with order_items
+  - 5–10 automations per business (welcome, follow-up, abandoned cart, upsell)
+- Populate `automation_logs` and `nlp_results` to simulate real activity.
+- Fill `analytics_daily` with aggregated counts of messages, orders, revenue, and new customers.
+- Ensure **end-to-end demo flow is preserved**: messages trigger automations, orders generate analytics, dashboard shows live results.
+
+---
+
+### Step 7: Demo and Testing
+- Ensure the CRM works **end-to-end** with populated demo data.
+- Modular design: missing keys or optional modules do not break the system.
+- Provide instructions to:
+  - Run locally
+  - Deploy on Vercel
+  - Test messaging, automations, dashboard views
+  - Switch safely to live credentials
+
+---
+
+### Step 8: Environment Setup
+- Generate `.env.example` with placeholders for all keys.
+- Include scripts for initializing demo data safely.
+- Instructions for local development and Vercel deployment.
+
+---
+
+### Step 9: Performance & Best Practices
+- Use modern, efficient architecture (Next.js, React, Supabase Edge Functions where appropriate).
+- Use asynchronous operations, caching where possible.
+- Ensure fast queries and rendering even with demo data.
+
+---
+
+### Important Notes:
+- **Do not recreate or overwrite the existing database schema.**
+- Respect RLS policies but allow **development/demo mode**.
+- CRM must be **fully ready-to-demo**, visually impressive, functional, and modular.
+- Populate **extensive demo/test data** for multiple businesses to showcase the platform.
+- Provide **clear instructions for future live deployment** and credential switching.

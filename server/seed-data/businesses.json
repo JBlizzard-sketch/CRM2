@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Glam Beauty KE",
+    "slug": "glambeauty",
+    "products": [
+      { "name": "Fenty Foundation", "description": "Premium Fenty Foundation - Quality guaranteed!", "price": 3500, "stock": 45, "attributes": { "category": "beauty", "featured": true } },
+      { "name": "MAC Ruby Woo Lipstick", "description": "Premium MAC Ruby Woo Lipstick - Quality guaranteed!", "price": 2800, "stock": 62, "attributes": { "category": "beauty", "featured": false } },
+      { "name": "Maybelline Mascara", "description": "Premium Maybelline Mascara - Quality guaranteed!", "price": 1200, "stock": 78, "attributes": { "category": "beauty", "featured": true } },
+      { "name": "NYX Eyeshadow Palette", "description": "Premium NYX Eyeshadow Palette - Quality guaranteed!", "price": 2500, "stock": 34, "attributes": { "category": "beauty", "featured": false } },
+      { "name": "Setting Spray", "description": "Premium Setting Spray - Quality guaranteed!", "price": 1500, "stock": 56, "attributes": { "category": "beauty", "featured": true } }
+    ]
+  },
+  {
+    "name": "Shades & Wigs Boutique",
+    "slug": "shadeswigs",
+    "products": [
+      { "name": "Brazilian Lace Front Wig", "description": "Premium Brazilian Lace Front Wig - Quality guaranteed!", "price": 12000, "stock": 23, "attributes": { "category": "hair", "featured": true } },
+      { "name": "Bob Cut Wig", "description": "Premium Bob Cut Wig - Quality guaranteed!", "price": 8500, "stock": 41, "attributes": { "category": "hair", "featured": true } },
+      { "name": "Curly Hair Bundle", "description": "Premium Curly Hair Bundle - Quality guaranteed!", "price": 15000, "stock": 18, "attributes": { "category": "hair", "featured": false } },
+      { "name": "Straight Hair Weave", "description": "Premium Straight Hair Weave - Quality guaranteed!", "price": 9000, "stock": 29, "attributes": { "category": "hair", "featured": true } },
+      { "name": "Colored Wig - Burgundy", "description": "Premium Colored Wig - Burgundy - Quality guaranteed!", "price": 10500, "stock": 35, "attributes": { "category": "hair", "featured": false } }
+    ]
+  },
+  {
+    "name": "Chic Fashion Kenya",
+    "slug": "chicfashion",
+    "products": [
+      { "name": "Ankara Dress", "description": "Premium Ankara Dress - Quality guaranteed!", "price": 3500, "stock": 52, "attributes": { "category": "fashion", "featured": true } },
+      { "name": "Denim Jeans", "description": "Premium Denim Jeans - Quality guaranteed!", "price": 2800, "stock": 67, "attributes": { "category": "fashion", "featured": false } },
+      { "name": "Maxi Skirt", "description": "Premium Maxi Skirt - Quality guaranteed!", "price": 2500, "stock": 44, "attributes": { "category": "fashion", "featured": true } },
+      { "name": "Blazer", "description": "Premium Blazer - Quality guaranteed!", "price": 4500, "stock": 31, "attributes": { "category": "fashion", "featured": true } },
+      { "name": "Leather Jacket", "description": "Premium Leather Jacket - Quality guaranteed!", "price": 6500, "stock": 19, "attributes": { "category": "fashion", "featured": false } }
+    ]
+  }
+]
